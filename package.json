@@ -1,0 +1,55 @@
+{
+  "name": "nife-notify",
+  "version": "0.0.3",
+  "description": "Nife extension that shows a Windows toast notification when a task finishes.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "nife-package",
+    "notify",
+    "notification",
+    "toast",
+    "windows",
+    "wsl"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "extensions",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "nife-coding-agent": "*"
+  },
+  "private": false,
+  "publishConfig": {
+    "registry": "http://192.168.151.132:4873/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliverMao/nife-notify.git"
+  },
+  "homepage": "https://github.com/OliverMao/nife-notify#readme",
+  "bugs": {
+    "url": "https://github.com/OliverMao/nife-notify/issues"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "typescript": "5.9.3",
+    "nife-coding-agent": "0.4.3"
+  }
+}
